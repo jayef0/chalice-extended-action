@@ -1,6 +1,6 @@
-# AWS Chalice Extended Action
+# Chalice Extended Action
 
-This Github action allows automated deployment of your AWS Chalice application via Github Actions.
+This Github action allows automated deployment of your Chalice application via Github Actions.
 
 
 You don't know what Chalice is?
@@ -34,7 +34,7 @@ on:
   push:
     branches:
       - master
-name: Deploy master branch to Chalice
+name: Deploy branch to Chalice
 jobs:
   deploy:
     name: deploy
@@ -42,7 +42,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: chalice deploy
-      uses: jayef0/chalice-action-extended@master
+      uses: jayef0/chalice-action-extended@v0.1.0
       env:
         WORKING_DIRECTORY: backend/chalice
         REQUIREMENTS_FILE: requirements.prod.txt
