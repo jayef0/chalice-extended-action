@@ -5,8 +5,6 @@ author: 'Janfabian Fabriczek <janfabian@fabriczek.engineer> (Based on previous a
 branding:
   icon: cloud
   color: yellow
-inputs:
-outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
