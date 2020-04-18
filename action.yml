@@ -3,7 +3,7 @@ description: This Github action allows automated deployment of your AWS Chalice 
 author: Janfabian <janfabian@fabriczek.com> (Based on previous action of: Chris Oh <chris@5tigerjelly.com>)
 branding:
   icon: cloud
-  color: yellow
+  color: green
 runs:
   using: 'docker'
   image: 'Dockerfile'
