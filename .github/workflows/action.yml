@@ -1,9 +1,0 @@
-name: Chalice Extended Action
-description: This Github action allows automated deployment of your AWS Chalice application via Github Actions.
-author: Janfabian <janfabian@fabriczek.com> (Based on previous action of: Chris Oh <chris@5tigerjelly.com>)
-branding:
-  icon: cloud
-  color: green
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
