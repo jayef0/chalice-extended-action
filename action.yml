@@ -1,16 +1,10 @@
 # action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
-inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+name: Chalice Extended Action
+description: This Github action allows automated deployment of your AWS Chalice application via Github Actions.
+author: Janfabian <janfabian@fabriczek.com> (Based on previous action of: Chris Oh <chris@5tigerjelly.com>)
+branding:
+  icon: cloud
+  color: green
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.who-to-greet }}
