@@ -1,6 +1,6 @@
 # action.yml
 name: 'Chalice Extended Action'
-description: 'This Github action allows automated deployment of your AWS Chalice application via Github Actions.'
+description: 'This Github action allows automated deployment of your Chalice application via Github Actions.'
 author: 'Janfabian Fabriczek <janfabian@fabriczek.engineer> (Based on previous action of: Chris Oh <chris@5tigerjelly.com>)'
 branding:
   icon: cloud
