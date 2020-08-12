@@ -10,9 +10,16 @@ then
       pip install -r "$REQUIREMENTS_FILE"
 fi
 
-if [ -z "$PROJECT_DIR" ]
+if ! [ -z "$PROJECT_DIR" ]
 then
-      chalice "$OPERATION"
-else
-      chalice --project-dir "$PROJECT_DIR" "$OPERATION"
+      projectDirSubCommand="--project-dir $PROJECT_DIR"
 fi
+
+if ! [ -z "$STAGE" ]
+then
+      stageSubCommand="--stage $STAGE"
+fi
+
+command="chalice $projectDirSubCommand $OPERATION $stageSubCommand"
+
+eval $command
