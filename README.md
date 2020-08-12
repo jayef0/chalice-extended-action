@@ -18,7 +18,7 @@ The parameters will be passed to the action by using environment variables.
 | WORKING_DIRECTORY  | Working directory of chalice in which the chalice project is or should be stored  | Optional  |
 | REQUIREMENTS_FILE  | Path to a requirements file which should be installed before handling the chalice project  | Optional  |
 | PROJECT_DIR  | Path to a directory which contains a chalice project  | Optional  |
-| STAGE  | Name of stage which should be created or used | Optional  |
+| STAGE  | Name of stage which should be used | Optional  |
 | OPERATION  | Chalice operation  | Required  |
 
 
