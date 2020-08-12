@@ -18,6 +18,7 @@ The parameters will be passed to the action by using environment variables.
 | WORKING_DIRECTORY  | Working directory of chalice in which the chalice project is or should be stored  | Optional  |
 | REQUIREMENTS_FILE  | Path to a requirements file which should be installed before handling the chalice project  | Optional  |
 | PROJECT_DIR  | Path to a directory which contains a chalice project  | Optional  |
+| STAGE  | Name of stage which should be created or used | Optional  |
 | OPERATION  | Chalice operation  | Required  |
 
 
@@ -47,6 +48,7 @@ jobs:
         WORKING_DIRECTORY: backend/chalice
         REQUIREMENTS_FILE: requirements.prod.txt
         OPERATION: deploy
+        STAGE: dev
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_DEFAULT_REGION: us-east-1
