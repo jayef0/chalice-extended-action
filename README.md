@@ -43,7 +43,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: chalice deploy
-      uses: jayef0/chalice-extended-action@v0.1.0
+      uses: jayef0/chalice-extended-action@release-v0.2.0
       env:
         WORKING_DIRECTORY: backend/chalice
         REQUIREMENTS_FILE: requirements.prod.txt
