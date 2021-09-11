@@ -24,7 +24,7 @@ The parameters will be passed to the action by using environment variables.
 
 ## Usage
 
-1. Create a directory named `.github/workflow/`
+1. Create a directory named `.github/workflows/`
 
 2. Create a YAML file, e.g. action_workflow.yml, and place it in the created directory above
 
